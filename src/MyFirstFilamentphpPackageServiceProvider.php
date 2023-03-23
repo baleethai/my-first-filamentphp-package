@@ -2,6 +2,7 @@
 
 namespace Baleethai\MyFirstFilamentphpPackage;
 
+use Filament\Navigation\UserMenuItem;
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
@@ -39,4 +40,15 @@ class MyFirstFilamentphpPackageServiceProvider extends PluginServiceProvider
                 ->hasConfigFile()
                 ->hasViews();
     }
+
+    protected function getUserMenuItems(): array
+    {
+        return [
+            UserMenuItem::make()
+                ->label('Settings')
+                ->url(route('filament.pages.settings'))
+                ->icon('heroicon-s-cog'),
+        ];
+    }
+
 }
