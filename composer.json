@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "baleethai/my-first-filamentphp-package",
+    "description": "This is my package my-first-filamentphp-package",
     "keywords": [
-        ":vendor_name",
+        "baleethai",
         "laravel",
-        ":package_slug"
+        "my-first-filamentphp-package"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/baleethai/my-first-filamentphp-package",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Thinnakorn Pattha",
+            "email": "thinnakorn@jndweb.com",
             "role": "Developer"
         }
     ],
@@ -38,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Baleethai\\MyFirstFilamentphpPackage\\": "src",
+            "Baleethai\\MyFirstFilamentphpPackage\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Baleethai\\MyFirstFilamentphpPackage\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -67,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Baleethai\\MyFirstFilamentphpPackage\\MyFirstFilamentphpPackageServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "MyFirstFilamentphpPackage": "Baleethai\\MyFirstFilamentphpPackage\\Facades\\MyFirstFilamentphpPackage"
             }
         }
     },
